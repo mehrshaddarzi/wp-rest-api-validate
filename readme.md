@@ -14,7 +14,7 @@ Professional validation argument for WordPress REST API
 
 ## Installation
 
-Download zip file and install plugin in your WordPress site.
+[Download zip file](https://github.com/mehrshaddarzi/wp-rest-api-validate/releases/download/v1.0.0/wp-rest-api-validate.zip) and install plugin in your WordPress site.
 
 ### How to use in register_rest_route
 
