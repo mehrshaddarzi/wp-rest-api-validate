@@ -83,9 +83,17 @@ apply_filters('wp_rest_api_validate_locale', get_locale());
 apply_filters('wp_rest_api_validate_lang_dir', dirname(__FILE__) . '/lang');
 ```
 
-#### Pre Validation start (use for disable or add custom condition by request)
+#### Pre Validation Start
+
+use for disable or add custom condition by request:
+
 ```php
-apply_filters('wp_rest_api_validate_pre', null, \WP_REST_Response $response, \WP_REST_Request $request, $handler);
+apply_filters('wp_rest_api_validate_pre', 
+    null, 
+    \WP_REST_Response $response, 
+    \WP_REST_Request $request, 
+    $handler
+);
 ```
 
 ## Contributing
