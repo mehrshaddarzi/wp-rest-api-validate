@@ -24,12 +24,7 @@ class WP_REST_API_Validate_Factory
         $loader->load($lang, 'validation', 'lang');
         return new Translation\Translator($loader, $lang);
     }
-
-    public static function get_request_params(): array
-    {
-        return \Symfony\Component\HttpFoundation\Request::createFromGlobals()->request->all();
-    }
-
+    
     public function __call($method, $args)
     {
         return call_user_func_array(
